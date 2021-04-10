@@ -4,7 +4,7 @@ from discord.ext import commands, tasks
 import random
 import asyncio
 
-activites=["Modération du serveur","faire la police","=help pour connaitre les commandes","wati bot de modération","vous surveiller"]
+activites=["Modération du serveur","faire la police","=help pour connaitre les commandes","vous surveiller"]
 bot = commands.Bot(command_prefix = "=", description = "Bot multifonction",intents=Intents.all()) 
 
 #morpion 
@@ -501,5 +501,5 @@ async def dm_error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.send("Cette commande prend en argument l'identifiant de chaque membre à contacter et le texte à envoyer.")
 
-bot.run("NzgyMzAyNzAwODU0NzA2MjI3.X8KOKg.rsGojV2Amgbz23pWyw5QlDId6Ho")
+bot.run('Token')
 
